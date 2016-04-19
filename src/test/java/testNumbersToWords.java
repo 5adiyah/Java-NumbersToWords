@@ -30,4 +30,11 @@ public void doubleDigitConverter_returnsWordsForNumbersInBothPlaces_22() {
   String expected = "twenty-two" ;
   assertEquals(expected, testNumbersToWords.integerConverter("22"));
   }
+
+@Test
+public void doubleDigitConverter_returnsWordsForNumbersinHundreds_221() {
+  NumbersToWords testNumbersToWords = new NumbersToWords();
+  String expected = "two hundred twenty-one" ;
+  assertEquals(expected, testNumbersToWords.integerConverter("221"));
+  }
 }

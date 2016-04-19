@@ -60,8 +60,15 @@ public class NumbersToWords {
       conversions.put(80,"eighty");
       conversions.put(90,"ninety");
 
+
     String result = "";
-    if(newNumber > 19  && newNumber % 10 != 0){
+    if(newNumber > 99  && newNumber % 100 != 0){     //121
+      Integer dividednum = newNumber / 100; //1
+      Integer modulusRemainder = newNumber % 100;  //21
+      Integer modulusRemainder2 = modulusRemainder % 10; //1
+      Integer finalNum = modulusRemainder - modulusRemainder2; //20
+      result = ((conversions.get(dividednum) + " hundred " + (conversions.get(finalNum)) + "-" + (conversions.get(modulusRemainder2))));
+    } else if(newNumber > 19  && newNumber % 10 != 0){
       Integer modulusRemainder = newNumber % 10;
       Integer tensPlace = newNumber - modulusRemainder;
       result = ((conversions.get(tensPlace) + "-" + (conversions.get(modulusRemainder))));
