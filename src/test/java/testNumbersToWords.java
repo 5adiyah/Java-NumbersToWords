@@ -27,7 +27,7 @@ public void doubleDigitConverter_returnsWordsForNumbersInBothPlace_18() {
 @Test
 public void doubleDigitConverter_returnsWordsForNumbersInBothPlaces_22() {
   NumbersToWords testNumbersToWords = new NumbersToWords();
-  String expected = "twenty two" ;
+  String expected = "twenty-two" ;
   assertEquals(expected, testNumbersToWords.integerConverter("22"));
   }
 }

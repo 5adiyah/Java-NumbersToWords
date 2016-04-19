@@ -62,7 +62,9 @@ public class NumbersToWords {
 
     String result = "";
     if(newNumber > 19  && newNumber % 10 != 0){
-      result = "twenty two";
+      Integer modulusRemainder = newNumber % 10;
+      Integer tensPlace = newNumber - modulusRemainder;
+      result = ((conversions.get(tensPlace) + "-" + (conversions.get(modulusRemainder))));
     }else {
       result = conversions.get(newNumber);
     }
