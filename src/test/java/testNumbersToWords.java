@@ -7,13 +7,13 @@ public class testNumbersToWords {
 public void integerConverter_returnsWordsForNumbersInOnesPlace_9() {
   NumbersToWords testNumbersToWords = new NumbersToWords();
   String expected = "nine" ;
-  assertEquals(expected, testNumbersToWords.integerConverter(9));
+  assertEquals(expected, testNumbersToWords.integerConverter("9"));
   }
 
 @Test
 public void integerConverter_returnsWordsForNumbersInTensPlace_30() {
   NumbersToWords testNumbersToWords = new NumbersToWords();
   String expected = "thirty" ;
-  assertEquals(expected, testNumbersToWords.integerConverter(30));
+  assertEquals(expected, testNumbersToWords.integerConverter("30"));
   }
 }
