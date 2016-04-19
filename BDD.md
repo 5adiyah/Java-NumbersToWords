@@ -15,3 +15,6 @@ excluding (20, 30, 40, 50, 60, 70, 80, 90)
 by reading first number, then second
 number, combining both and returns
 the written word version
+
+Program takes number and returns                 99                                        "Ninety-nine"
+the length
