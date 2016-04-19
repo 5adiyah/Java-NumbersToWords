@@ -40,6 +40,16 @@ public class NumbersToWords {
       conversions.put(8,"eight");
       conversions.put(9,"nine");
 
+      conversions.put(11 ,"eleven");
+      conversions.put(12,"twelve");
+      conversions.put(13,"thirteen");
+      conversions.put(14,"fourteen");
+      conversions.put(15,"fiften");
+      conversions.put(16,"sixteen");
+      conversions.put(17,"seventeen");
+      conversions.put(18,"eighteen");
+      conversions.put(19,"nineteen");
+
       conversions.put(10, "ten");
       conversions.put(20,"twenty");
       conversions.put(30,"thirty");
@@ -50,19 +60,26 @@ public class NumbersToWords {
       conversions.put(80,"eighty");
       conversions.put(90,"ninety");
 
+    String result = "";
+    if(newNumber > 19  && newNumber % 10 != 0){
+      result = "twenty two";
+    }else {
+      result = conversions.get(newNumber);
+    }
 
-    // for(int i = 0; i < conversions.size(); i++){
-    // //   if(number == conversions.get("one")){
-    // //     convertedNumber = "one";
-    // //   }else if(number == conversions.get("ten")){
-    // //     convertedNumber = "ten";
-    // //   } else {
-    // //     convertedNumber = "";
-    // //   }
-    // // } return convertedNumber;
-    // }
-    String result = conversions.get(newNumber);
-return result;
-}
+
+    return result;
+
+
+  }
+
+
+//Program takes number from 21-99
+//by reading first number, then second
+//number, combining both and returns
+//the written word version
+
+
+
 
 }

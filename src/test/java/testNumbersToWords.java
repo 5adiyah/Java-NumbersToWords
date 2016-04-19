@@ -16,4 +16,18 @@ public void integerConverter_returnsWordsForNumbersInTensPlace_30() {
   String expected = "thirty" ;
   assertEquals(expected, testNumbersToWords.integerConverter("30"));
   }
+
+@Test
+public void doubleDigitConverter_returnsWordsForNumbersInBothPlace_18() {
+  NumbersToWords testNumbersToWords = new NumbersToWords();
+  String expected = "eighteen" ;
+  assertEquals(expected, testNumbersToWords.integerConverter("18"));
+  }
+
+@Test
+public void doubleDigitConverter_returnsWordsForNumbersInBothPlaces_22() {
+  NumbersToWords testNumbersToWords = new NumbersToWords();
+  String expected = "twenty two" ;
+  assertEquals(expected, testNumbersToWords.integerConverter("22"));
+  }
 }

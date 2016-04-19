@@ -10,7 +10,7 @@ Program takes number
 (10, 20, 30, 40, 50, 60, 70, 80, 90)            20                                         "Twenty"
 returns the written word version
 
-Program takes number from 22-99                 99                                        "Ninety-nine"
+Program takes number from 21-99                 99                                        "Ninety-nine"
 excluding (20, 30, 40, 50, 60, 70, 80, 90)
 by reading first number, then second
 number, combining both and returns
